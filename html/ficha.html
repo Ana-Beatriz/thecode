@@ -1,121 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css" type="text/css">
-    <title>The Code - Trabalhando com Bootstrap </title>
-  </head>
-  <body>
-    <div class="container">
-      <form class="form-horizontal">
-        <div class="row">
-            <div class="form-group col-md-2">
-              <label for="warning" class="control-label">Endereço de email</label>
+	<head>
+		<meta charset="utf-8">
+    	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css" type="text/css">
+    	<title>The Code - Trabalhando com Bootstrap </title>
+    </head>
+    <body>
+        <!-- Incio Container -->
+        <div class="container">
+            <!-- Inicio Linha -->
+            <div class="row">
+                <!-- Inicio do formulario -->
+                <form class="form-horizontal">
+                    <!--Inicio Email -->
+                    <div class="form-group">
+                    <label for="warning" class="col-sm-4 control-label">Endereço de email</label>
+                    <div class="col-sm-4">
+                        <input type="email" id="warning" class="form-control" placeholder="Digite seu email">
+                    </div>
+                    </div>
+                    <!-- Fim Email -->
+                    <!--Inicio Nome -->
+                    <div class="form-group">
+                        <label for="nome" class="col-sm-4 control-label">Nome</label>
+                        <div class="col-sm-4">
+                            <input type="text" id="nome" class="form-control" placeholder="Digite seu nome">
+                        </div>
+                    </div>
+                    <!--Fim Nome -->
+                    <!--Inicio Sexo -->
+                    <div class="form-group">
+                        <label for="sexo" class="col-sm-4 control-label">Sexo</label>
+                        <!--Inicio Opções Sexo -->
+                        <div class="col-sm-4">
+                            <select name="sexo" id="sexo" class="form-control">
+                                <option value="" selected=""></option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                            </select>
+                        </div>
+                        <!--Fim Opções Sexo -->
+                    </div>
+                    <!--Fim Sexo -->
+                    <!--Inicio Curso -->
+                    <div class="form-group">
+                        <label for="curso" class="col-sm-4 control-label">Curso</label>
+                        <!--Inicio Opções Curso -->
+                        <div class="col-sm-4">
+                            <select name="curso" id="curso" class="form-control">
+                                <option value="" selected=""></option>
+                                <option value="informatica">Curso Técnico em Informatica</option>
+                                <option value="alimentos">Curso Técnico em Alimentos</option>
+                                <option value="agropecuaria">Curso Técnico em Agropecuaria</option>
+                            </select>
+                        </div>
+                        <!--Fim Opções Curso -->
+                    </div>
+                    <!--Fim Curso -->
+                    <!--Inicio Endereço -->
+                    <div class="form-group">
+                        <label for="endereco" class="col-sm-4 control-label">Endereço para correspondência</label>
+                        <div class="col-sm-4">
+                            <input type="text" id="endereco" class="form-control" placeholder="Digite seu email">
+                        </div>
+                    </div>
+                    <!--Fim Endereço -->
+                    <!--Inicio Complemento -->
+                    <div class="form-group">
+                        <label for="complemento" class="col-sm-4 control-label">Complemento do endereço</label>
+                        <div class="col-sm-4">
+                            <input type="text" id="complemento" class="form-control" placeholder="Digite seu complemento">
+                        </div>
+                    </div>
+                    <!--Fim Complemento -->
+                    <!--Inicio Cep -->
+                    <div class="form-group">
+                        <label for="cep" class="col-sm-4 control-label">CEP</label>
+                        <div class="col-sm-4">
+                            <input type="text" id="cep" class="form-control" placeholder="Digite seu cep">
+                        </div>
+                    </div>
+                    <!--Fim Cep -->
+                    <!--Inicio Municipio -->
+                    <div class="form-group">
+                        <label for="municipio" class="col-sm-4 control-label">Municipio</label>
+                        <div class="col-sm-3">
+                            <input type="text" id="municipio" class="form-control" placeholder="Digite seu município">
+                        </div>
+                        <!--Inicio Opções Municipio -->
+                        <div class="col-sm-1">
+                            <select name="uf" id="uf" class="form-control">
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MS">MS</option>
+                                <option value="MT">MT</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS" selected="">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
+                        </div>
+                        <!--Fim Opções Municipio -->
+                    </div>
+                    <!--Fim Municipio -->
+                    <!--Inicio Botão -->
+                    <div class="form-group">
+                        <div class="col-sm-offset-4 col-sm-8">
+                            <button type="submit" class="btn btn-default">Salvar</button>
+                        </div>
+                    </div>
+                    <!--Fim Botão -->
+                </form>
+                <!--Fim Formulario -->
             </div>
-            <div class="form-group col-md-3">
-              <input type="email" id="warning" class="form-control"/>
-            </div>
+            <!--Fim Linha -->
         </div>
-        <div class="row">
-          <div class="form-group col-md-1">
-            <label for="nome">Nome</label>
-          </div>
-          <div class="form-group col-md-4">
-            <input type="text" id="nome" class="form-control" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-1">
-            <label for="sexo" class="control-label">Sexo</label>
-          </div>
-          <div class="form-group col-md-2">
-            <select name="sexo" id="sexo" class="form-control" >
-              <option value="" selected></option>
-              <option value="masculino">Masculino</option>
-              <option value="feminino">Feminino</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-1">
-            <label for="curso">Curso</label>
-          </div>
-          <div class="form-group col-md-3">
-            <select name="curso" id="curso" class="form-control" >
-              <option value="" selected></option>
-              <option value="informatica">Curso Técnico em Informatica</option>
-              <option value="alimentos">Curso Técnico em Alimentos</option>
-              <option value="agropecuaria">Curso Técnico em Agropecuaria</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-3">
-            <label for="endereco">Endereço para correspondência</label>
-          </div>
-          <div class="form-group col-md-5">
-            <input type="text" id="endereco" class="form-control" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-3">
-            <label for="complemento">Complemento do endereço</label>
-          </div>
-          <div class="form-group col-md-3">
-            <input type="text" id="complemento" class="form-control" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-1">
-            <label for="cep">CEP</label>
-          </div>
-          <div class="form-group col-md-2">
-            <input type="text" id="cep" class="form-control" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-2">
-            <label for="municipio">Municipio</label>
-          </div>
-          <div class="col-md-3">
-            <input type="text" id="municipio" class="form-control" />
-          </div>
-          <div class="form-group col-md-1">
-            <select name="uf" id="uf" class="form-control" >
-              <option value="AC">AC</option>
-              <option value="AL">AL</option>
-              <option value="AP">AP</option>
-              <option value="AM">AM</option>
-              <option value="BA">BA</option>
-              <option value="CE">CE</option>
-              <option value="DF">DF</option>
-              <option value="ES">ES</option>
-              <option value="GO">GO</option>
-              <option value="MA">MA</option>
-              <option value="MS">MS</option>
-              <option value="MT">MT</option>
-              <option value="MG">MG</option>
-              <option value="PA">PA</option>
-              <option value="PB">PB</option>
-              <option value="PR">PR</option>
-              <option value="PE">PE</option>
-              <option value="PI">PI</option>
-              <option value="RJ">RJ</option>
-              <option value="RN">RN</option>
-              <option value="RS" selected>RS</option>
-              <option value="RO">RO</option>
-              <option value="RR">RR</option>
-              <option value="SC">SC</option>
-              <option value="SP">SP</option>
-              <option value="SE">SE</option>
-              <option value="TO">TO</option>
-            </select>
-          </div>
-        </div>
-        <div class="button">
-          <button type= "submit" class="btn">Salvar</button>
-        </div>
-      </form>
-    </div>
-  </body>
+        <!--Fim Container -->
+    </body>
 </html>
